@@ -341,10 +341,10 @@
               <span className="font-bold text-base truncate" style={{ color: COLORS.textMain }}>{task.client}</span>
               {/* ✏️ [แก้ได้] Badge สีตาม channel — เพิ่ม channel ใหม่ได้โดยเพิ่ม case */}
               <span className={`text-[7px] px-1.5 py-0.5 rounded-md font-black uppercase border ${
-                task.channel === 'LINE' ? 'text-[#A1B382] bg-[#D9E2C4]/20 border-[#A1B382]/30' : 
-                task.channel === 'FB' || task.channel === 'FACEBOOK' ? 'text-[#68829E] bg-[#CCD6DF]/20 border-[#68829E]/30' : 
-                task.channel === 'IG' ? 'text-[#B39393] bg-[#EAD1D1]/30 border-[#B39393]/40' : 
-                task.channel === 'DISCORD' || task.channel === 'Discord' ? 'text-[#A1889E] bg-[#E2D5DF]/30 border-[#A1889E]/40' : 
+                task.channel === 'LINE' ? 'text-[#A1B382] bg-[#D9E2C4]/50 border-[#A1B382]/60' : 
+                task.channel === 'FB' || task.channel === 'FACEBOOK' ? 'text-[#68829E] bg-[#CCD6DF]/50 border-[#68829E]/60' : 
+                task.channel === 'IG' ? 'text-[#B39393] bg-[#EAD1D1]/50 border-[#B39393]/60' : 
+                task.channel === 'DISCORD' || task.channel === 'Discord' ? 'text-[#A1889E] bg-[#E2D5DF]/50 border-[#A1889E]/60' : 
                 'bg-white/50 text-gray-400 border-gray-100'
               }`}>{task.channel}</span>
               {/* ✏️ [แก้ได้] ข้อความ badge ด่วน — เปลี่ยน "🔥 ด่วน" เป็นอื่น */}
@@ -1139,3 +1139,4 @@
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(<App />);
+
